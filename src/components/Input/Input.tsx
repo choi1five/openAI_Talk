@@ -1,20 +1,17 @@
-import { ChangeEventHandler } from 'react';
+import { InputHTMLAttributes } from 'react';
 import styled from '@emotion/styled';
 import { flexbox } from '@/styles/mixin';
 
-interface Props {
-  id: string;
+interface Props extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
-  type?: string;
-  value: string;
-  onChange: ChangeEventHandler;
 }
 
-const Input = ({ id, label, type = 'text', value, onChange }: Props) => {
+const Input = ({ id, label, ...attributes }: Props) => {
+  console.log(attributes);
   return (
     <Wrapper>
       <label htmlFor={id}>{label}</label>
-      <input id={id} name={id} type={type} value={value} onChange={onChange} />
+      <input id={id} name={id} {...attributes} />
     </Wrapper>
   );
 };
