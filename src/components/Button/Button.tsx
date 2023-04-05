@@ -15,6 +15,7 @@ const Button = styled.button<Props>`
   padding: ${({ padding }) => padding || '12px 16px'};
   border-radius: 5px;
   text-align: center;
+  border: none;
 `;
 
 export default Button;

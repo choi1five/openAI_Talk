@@ -21,6 +21,7 @@ export default Input;
 const Wrapper = styled.div`
   ${flexbox('column', 'center', 'flex-start')};
   font-size: 20px;
+  width: 100%;
 
   & label {
     font-weight: bold;
