@@ -13,6 +13,10 @@ body {
   background: ${theme.black};
   color: ${theme.white};
 }
+
+a {
+  color: ${theme.white};
+}
 `;
 
 export default globalStyle;
