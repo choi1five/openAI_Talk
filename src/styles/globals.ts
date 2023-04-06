@@ -14,8 +14,19 @@ body {
   color: ${theme.white};
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 a {
   color: ${theme.white};
+}
+
+button {
+  background: inherit;
+  border: none;
+  padding: 0;
 }
 `;
 
