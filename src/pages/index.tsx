@@ -132,7 +132,7 @@ const ChatList = styled.ul`
 
   & li {
     ${flexbox('row', 'space-between', 'center')};
-    padding: 0 24px;
+    padding: 12px 24px;
     border-bottom: 1px solid ${({ theme }) => theme.gray};
   }
 `;
