@@ -3,20 +3,15 @@ import theme from './theme';
 const globalStyle = `
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }  
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   min-height: 100%;
   background: ${theme.black};
   color: ${theme.white};
-}
-
-ul {
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -26,7 +21,6 @@ a {
 button {
   background: inherit;
   border: none;
-  padding: 0;
 }
 `;
 
